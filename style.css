@@ -1,0 +1,242 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    background-image: url('fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 128, 0);
+}
+
+.header h1 {
+    margin-left: 10px;
+    text-decoration-line: underline;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    margin-top: auto; 
+}
+
+nav {
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+nav ul li a {
+    display: block;
+    background: rgb(239, 239, 239);
+    color: rgb(255, 128, 0);
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 300ms ease;
+    text-align: center;
+
+}
+
+.boton{
+    display: block;
+    background: rgb(198, 198, 198);
+    color: rgb(255, 128, 0);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 300ms ease;
+    text-align: center;
+    width: 400px;
+    margin: 5px;
+    border: solid black 1px;
+}
+
+.boton:hover, nav ul li a:hover {
+    color: white;
+    background: grey
+}
+
+.botonEliminar{
+    display: block;
+    background: red;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 300ms ease;
+    text-align: center;
+    margin: 5px;
+    border: solid black 1px;
+}
+
+.botonEliminar:hover{
+    color: white;
+    background: grey
+}
+
+.botonEditar{
+    display: block;
+    background: rgb(74, 74, 245);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 300ms ease;
+    text-align: center;
+    margin: 5px;
+    border: solid black 1px;
+}
+
+.botonEditar:hover{
+    color: white;
+    background: grey
+}
+
+.botonAgregar{
+    display: block;
+    background: rgb(31, 222, 31);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 300ms ease;
+    text-align: center;
+    margin: 5px;
+    border: solid black 1px;
+}
+
+.botonAgregar:hover{
+    color: white;
+    background: grey
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    flex: start;
+}
+
+.header h1 {
+    display: flex;
+    align-items: center;
+}
+
+.header h1 span {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 25px;
+}
+
+.containerSuperior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInferior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.containerInformacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInferior ul{
+    list-style: none;
+}
+
+.containerBotones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerSuperiorTexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+}
+
+.containerSuperiorTexto p, .containerInformacion ul li{
+    font-size: 20px;
+}
+
+.containerEspecial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.containerSuperior a, .containerInferior a, .containerBotones a, .containerInferior a , .containerEspecial a {
+    text-decoration: none;
+}
+
+.containerInformacion ul h1{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.containerInformacion ul li span{
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.formulario{
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: 8px 10px;
+    border: solid 6px grey;
+    margin-bottom: 30px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.formulario form input, .formulario form select{
+    height: 40px;
+    font-size: 20px;
+}
+
+.containerSuperiorTexto h1, .containerSuperior h1{
+    text-decoration-line: underline;
+}

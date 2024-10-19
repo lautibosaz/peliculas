@@ -1,0 +1,21 @@
+<?php include('header.php'); ?>
+
+<div class="body">
+    <div class="containerInformacion">
+        <ul>
+            <h1><?php echo $pelicula->titulo ?></h1>
+            <li><span>Director:</span> <?php echo $pelicula->director ?></li>
+            <li><span>Descripcion:</span> <?php echo $pelicula->descripcion ?></li>
+            <li><span>Calificacion:</span> <?php echo $pelicula->calificacion ?></li>
+            <li><span>Fecha de estreno:</span> <?php echo $pelicula->estreno ?></li>
+        </ul>
+    </div>
+    <div class="containerInferior">
+        <?php if (isset($_SESSION['usuario'])) {
+            echo "</a><a href='EditarPelicula/" . urlencode($genero) . "/" . urldecode($pelicula->id_pelicula) . "'><span class='botonEditar'>Editar</span></a>";
+            echo "</a><a href='EliminarPelicula/" . urlencode($genero) . "/" . urldecode($pelicula->id_pelicula) . "'><span class='botonEliminar'>Eliminar</span></a>";
+        } ?>
+    </div >
+</div>
+
+<?php include('footer.php'); ?>
