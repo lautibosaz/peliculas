@@ -1,0 +1,21 @@
+<?php include('header.php'); ?>
+
+<div class="body">
+    <?php if ($error): ?>
+        <p class="error"><?php echo $error; ?></p>
+    <?php endif; ?>
+    <div class="containerSuperior">
+        <h1>Editar los datos del género <?php echo $genero->genero ?></h1>
+    </div>
+    <div class="containerInferior">
+        <div class="formulario">
+            <form method="post" action="EditarGenero/<?php echo urlencode($genero->genero) ?>">
+                <input name="genero" type="text" placeholder="Ingrese el nombre del genero" required>
+                <input name="descripcion" type="text" placeholder="Ingrese la descripcion del genero" required>
+                <button class="botonEditar" type="submit">Editar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<?php include('footer.php'); ?>

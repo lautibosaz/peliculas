@@ -1,0 +1,24 @@
+<?php include('header.php'); ?>
+
+<div class="body">
+    <?php if ($error): ?>
+        <p class="error"><?php echo $error; ?></p>
+    <?php endif; ?>
+    <div class="containerSuperior">
+        <h1>Editar los datos de la pelicula seleccionada</h1>
+    </div>
+    <div class="containerInferior">
+        <div class="formulario">
+            <form method="post" action="EditarPelicula/<?php echo urlencode($genero) . "/" . urldecode($idPelicula); ?>">
+                <input name="titulo" type="text" placeholder="Ingrese el titulo de la pelicula" required>
+                <input name="director" type="text" placeholder="Ingrese el director de la pelicula" required>
+                <input name="descripcion" type="text" placeholder="Ingrese la descripcion de la pelicula" required>
+                <input name="calificacion" type="number" placeholder="Ingrese la calificacion de la pelicula" required>
+                <input name="estreno" type="date" placeholder="Ingrese el estreno de la pelicula" required>
+                <button class="botonEditar" type="submit">Editar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<?php include('footer.php'); ?>
