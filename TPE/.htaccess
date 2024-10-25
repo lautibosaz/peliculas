@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Asegúrate de que la solicitud no sea un archivo ni un directorio existente
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Redirige las URLs amigables a router.php, usando "action" en lugar de "object"
+    RewriteRule ^(.*)$ router.php?action=$1 [QSA,L]
+</IfModule>
